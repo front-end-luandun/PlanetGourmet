@@ -8,6 +8,20 @@
 饮食地球是基于H5、JS、CSS开发的一个饮食文化科普向网站
 动画部分通过three.js/anime.js完成
 ```
+****
+	
+|Author|Nicole Chen|
+|---|---
+|E-mail|yongshi0627@gmail.com
+
+
+****
+## 目录
+* [ToDoList](#Todolist)
+* [需求分析](#需求分析)
+* [技术栈](#技术栈）
+
+##Todolist
 ```
 - [ ] 需求分析
 - [ ] 系统设计
@@ -17,3 +31,5 @@
 - [ ] 交付
 ```
 ##需求分析
+
+##技术栈
