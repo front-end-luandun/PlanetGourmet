@@ -14,6 +14,9 @@
 |---|---
 |E-mail|yongshi0627@gmail.com
 
+|Author|Chester Wang|
+|---|---
+|E-mail|670578767@qq.com
 
 ****
 ## 目录
