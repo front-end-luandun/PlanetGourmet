@@ -1,3 +1,9 @@
+/*
+注释:
+font-family:sans-serif : 这样如果所列出的字体都不能用，则默认的sans-serif字体能保证调用;
+
+*/
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -51,7 +57,6 @@ body {
 
 
 /*header section*/
-
 
 .sub_page .hero_area {
     height: auto;

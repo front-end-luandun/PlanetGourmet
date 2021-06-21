@@ -1,5 +1,0 @@
-<div class="layui-card">
-					<div class="layui-card-body">
-						<table id="organization-table" lay-filter="organization-table"></table>
-					</div>
-				</div>
