@@ -1,0 +1,266 @@
+/*
+第一部分
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    background: linear-gradient(to bottom, #340c8f 0%, #464ee8 50%, #6896ff 100%);
+    /*background-color: #340c8f;*/
+    /* 整体理解为一秒钟完成所有过度效果，缓慢的 */
+    transition: all 0.15s ease;
+    position: relative;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    height: 347px;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.home:after {
+    content: "";
+    display: block;
+    width: 5px;
+    background-color: #9c1c1f;
+    position: absolute;
+    left: calc(50% + 2px);
+    bottom: 0;
+    opacity: .5;
+    height: 50%;
+}
+
+h1 {
+    font-size: 1em;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.ie11 h1, .ie10 h1 {
+    margin: 11.25em 0 0 0;
+}
+h1 > span {
+    display: block;
+}
+
+h1 > span:first-child {
+    font-size: 3em;
+    font-family: "calluna", serif;
+    font-weight: 400;
+    font-style: italic;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    visibility: visible;
+}
+
+html.wf-loading h1 > span:first-child {
+    visibility: hidden;
+}
+
+h1 > span:last-child {
+    font-family: "proxima-nova", serif;
+    font-weight: 700;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    visibility: visible;
+    font-size: 6.5625em;
+}
+html.wf-loading h1 > span:last-child {
+    visibility: hidden;
+}
+h1 > span .dot {
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 0.1619em;
+    height: 0.1619em;
+    background-color: #fff;
+    margin: 0 0.08571em 0 0;
+}
+
+.sunCorona {
+    margin: 5.3125em auto 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #feffcc;
+    padding: 1.375em;
+    display: table;
+    position: relative;
+}
+
+.sunCorona:after {
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #feffcc;
+}
+
+.sunCorona:before {
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #feffcc;
+    animation-delay: 2s !important;
+    -webkit-animation-delay: 2s !important;
+    -moz-animation-delay: 2s !important;
+    -o-animation-delay: 2s !important;
+}
+
+.sunCorona .sunCore {
+    width: 21.4375em;
+    height: 21.4375em;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.svg .sunCorona .sunCore {
+    background-image: url("/img/sun-the.svg");
+}
+
+.sunCorona img {
+    position: absolute;
+    top: 7.0625em;
+    left: -2.5em;
+    z-index: 3;
+    width: 29.375em;
+    height: 28.75em;
+}
+
+.planetClouds {
+    width: 15.75em;
+    height: 13.625em;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -3.6875em;
+    right: 1.25em;
+}
+
+.svg .planetClouds {
+    background-image: url("/img/planet-purple-clouds.svg");
+}
+
+.firefox .planetClouds {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+}
+
+.intro {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ie11 .intro, .ie10 .intro {
+    display: block;
+}
+
+.intro p {
+    font-family: "proxima-nova", serif;
+    font-weight: 300;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    visibility: visible;
+    display: inline-block;
+    margin: 0 2.96875em 0;
+    font-size: 32px;
+}
+
+html.wf-loading .intro p {
+    visibility: hidden;
+}
+
+.ie11 .intro p, .ie10 .intro p {
+    margin-top: 300px;
+}
+
+.intro, .container {
+    position: relative;
+}
+/*
+: before
+
+*/
+.intro:before, .container:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 5px;
+    height: 100%;
+    background-color: #9c1c1f;
+    opacity: .5;
+}
+
+[data-color] {
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    padding: 0 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ie11 .container, .ie10 .container {
+    display: block;
+}
+
+.row, .rowWide, .rowTiny {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    position: relative;
+    max-width: 75em;
+    *zoom: 1;
+}
+
+.row:before, .rowWide:before, .rowTiny:before, .row:after, .rowWide:after, .rowTiny:after {
+    content: "";
+    display: table;
+}
+
+.row:after, .rowWide:after, .rowTiny:after {
+    clear: both;
+}
